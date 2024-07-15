@@ -136,25 +136,20 @@ class HeroAnimationHtml {
     for (let i = 0; i < 60; i++) {
       this.htmlString += '<div class="hero-animation_mask">' + "\n" +
         '<svg class="hero-animation_shape" viewBox="0 0 100 115" preserveAspectRatio="xMidYMin slice">' + "\n";
-      this.generatePolygon(0, 'hsl(0,0%,45%)');
-      this.generatePolygon(1, 'hsl(0,0%,45%)');
-      this.generatePolygon(2, 'hsl(0,0%,45%)');
-      this.generatePolygon(3, 'hsl(0,0%,45%)');
+      this.generatePolygon(0);
+      this.generatePolygon(1);
+      this.generatePolygon(2);
+      this.generatePolygon(3);
       this.htmlString += '</svg>' + "\n" +
         '</div>' + "\n";
     }
   }
-  generatePolygon(num, color) {
+  generatePolygon(num) {
     this.htmlString += '<polygon ' +
       'points="" ' +
       'fill="none" ' +
-      /*
-      'stroke="' + color + '" ' +
-      */
-      'stoke="currentColor"' +
-      /*
+      'stroke="currentColor"' +
       'opacity="0.45"' +
-      */
       'stroke-width="5">';
     this.generateAnimate(num);
     this.htmlString += '</polygon>' + "\n";
