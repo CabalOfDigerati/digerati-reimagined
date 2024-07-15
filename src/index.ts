@@ -152,7 +152,9 @@ class HeroAnimationHtml {
       'stroke="' + color + '" ' +
       */
       'stoke="currentColor"' +
+      /*
       'opacity="0.45"' +
+      */
       'stroke-width="5">';
     this.generateAnimate(num);
     this.htmlString += '</polygon>' + "\n";
