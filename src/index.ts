@@ -148,7 +148,11 @@ class HeroAnimationHtml {
     this.htmlString += '<polygon ' +
       'points="" ' +
       'fill="none" ' +
+      /*
       'stroke="' + color + '" ' +
+      */
+      'stoke="currentColor"' +
+      'opacity="0.45"' +
       'stroke-width="5">';
     this.generateAnimate(num);
     this.htmlString += '</polygon>' + "\n";
